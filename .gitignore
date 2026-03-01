@@ -1,4 +1,6 @@
-# Project root: Maven/Java build, IDE, and tooling (paths relative to this directory).
+# Repo root: project lives in distributed-kv/ (see distributed-kv/.gitignore for project-specific ignores).
+# Ignore root-level build and tooling artifacts if any are created here.
+
 # Maven
 **/target/
 pom.xml.tag
@@ -42,7 +44,3 @@ Thumbs.db
 # Clj-Kondo / LSP
 .clj-kondo/.cache/
 .lsp/
-
-# Optional: uncomment to ignore local env overrides
-# .env
-# .env.local
