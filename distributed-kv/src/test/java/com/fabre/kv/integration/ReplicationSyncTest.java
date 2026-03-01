@@ -26,7 +26,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 /**
- * Integration test: starts 3 nodes in-process, PUT on node1, then GET from node2 and assert the value was replicated.
+ * Integration test: starts 3 nodes in-process, PUT on node1, then GET from
+ * node2 and assert the value was replicated.
  */
 @Tag("integration")
 @DisplayName("Replication sync with 3 nodes in-process")
@@ -78,7 +79,10 @@ class ReplicationSyncTest {
         throw new AssertionError("Node on port " + port + " did not become ready within " + PORT_WAIT_MS + " ms");
     }
 
-    /** Sends PUT request; on 503 retries up to maxRetries times with delayMs between attempts. Returns last status. */
+    /**
+     * Sends PUT request; on 503 retries up to maxRetries times with delayMs between
+     * attempts. Returns last status.
+     */
     private static int sendPutWithRetry(HttpRequest putRequest, int maxRetries, int delayMs) throws Exception {
         int lastStatus = 0;
         for (int i = 0; i < maxRetries; i++) {
@@ -165,7 +169,8 @@ class ReplicationSyncTest {
             JsonNode body1 = JSON.readTree(getResp1.body());
             assertEquals(FIRST_VALUE, body1.get("value").asText(), "First GET must return first value");
 
-            // Second PUT (update same key). Retry on 503 (write quorum) to tolerate replication timing.
+            // Second PUT (update same key). Retry on 503 (write quorum) to tolerate
+            // replication timing.
             HttpRequest put2 = HttpRequest.newBuilder().uri(URI.create(putUrl)).timeout(Duration.ofSeconds(10))
                     .header("Content-Type", "application/json").PUT(HttpRequest.BodyPublishers
                             .ofString("{\"value\":\"" + SECOND_VALUE + "\"}", StandardCharsets.UTF_8))
