@@ -1,0 +1,1 @@
+GET __BASE_URL__/health
