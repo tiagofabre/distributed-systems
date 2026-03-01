@@ -1,0 +1,79 @@
+PUT __BASE_URL__/kv/load-key-1
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-2
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-3
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-4
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-5
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-6
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-7
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-8
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-9
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-10
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-11
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-12
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-13
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-14
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-15
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-16
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-17
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-18
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-19
+Content-Type: application/json
+@body.json
+
+PUT __BASE_URL__/kv/load-key-20
+Content-Type: application/json
+@body.json
